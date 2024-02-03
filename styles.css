@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #141400;
+  background-color: #ffffeb;
+}
+
+header {
+  position: fixed;
+  top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem 2rem;
+	justify-content: space-between;
+	background-color: #141400;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1rem;
+}
+
+nav a {
+	padding: 1rem;
+	color: #ffffeb;
+}
+
+nav a:hover {
+	background-color: #d8d800;
+}
+
+main {
+  margin: 14rem 2rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+form {
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 30rem;
+  margin: 1em auto;
+}
+
+fieldset {
+	padding: 1rem;
+	text-align: center;
+}
+
+p, li {
+  font-size: 1.8rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 600px) {
+	header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	
+	main {
+		margin: 16rem 1rem 1rem;
+	}
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  form {
+    font-size: 1.6rem;
+  }
+  p, li {
+    font-size: 1.6rem;
+  }
+  iframe {
+    width: 336px;
+    height: 189px;
+  }
+  .text {
+    display: flex;
+  flex-direction: column;
+  }
+}
